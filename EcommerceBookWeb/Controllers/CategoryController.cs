@@ -28,5 +28,18 @@ namespace EcommerceBookWeb.Controllers
         {
             return View();
         }
+
+        //POST
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Create(Category obj)
+        {
+            //create record inside database
+            _db.Categories.Add(obj);
+            _db.SaveChanges(); // saves and goes to database
+            return RedirectToAction("Index");
+        }
+
+
     }
 }
