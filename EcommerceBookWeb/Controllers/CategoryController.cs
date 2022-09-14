@@ -1,4 +1,5 @@
 ﻿using EcommerceBookWeb.Data;
+using EcommerceBookWeb.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EcommerceBookWeb.Controllers
@@ -18,8 +19,13 @@ namespace EcommerceBookWeb.Controllers
 
         public IActionResult Index()
         {
-            //convert the categories to a list and assign to objCategoryList
-            var objCategoryList = _db.Categories.ToList();
+           IEnumerable<Category> objCategoryList = _db.Categories;
+            return View(objCategoryList);
+        }
+
+        //GET
+        public IActionResult Create()
+        {
             return View();
         }
     }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CXDhDTxREh3Z5Cg1k4IkUsBRg12zaaEFP5rSZIT6cq0=",
+  "Hash": "jpZfQe/4fDlw7X9hfip7IapQ5ZiDtI7EoT1X4tRIASQ=",
   "Source": "EcommerceBookWeb",
   "BasePath": "_content/EcommerceBookWeb",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\theav\\source\\repos\\EcommerceBook\\EcommerceBookWeb\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\EcommerceBookWeb.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\theav\\source\\repos\\EcommerceBook\\EcommerceBookWeb\\wwwroot\\css\\bootswatch.css",
+      "SourceId": "EcommerceBookWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\theav\\source\\repos\\EcommerceBook\\EcommerceBookWeb\\wwwroot\\",
+      "BasePath": "_content/EcommerceBookWeb",
+      "RelativePath": "css/bootswatch.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootswatch.css"
     },
     {
       "Identity": "C:\\Users\\theav\\source\\repos\\EcommerceBook\\EcommerceBookWeb\\wwwroot\\css\\site.css",
