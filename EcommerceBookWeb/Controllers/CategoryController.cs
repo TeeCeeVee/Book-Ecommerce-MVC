@@ -34,10 +34,16 @@ namespace EcommerceBookWeb.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create(Category obj)
         {
-            //create record inside database
-            _db.Categories.Add(obj);
-            _db.SaveChanges(); // saves and goes to database
-            return RedirectToAction("Index");
+            //create validation
+            if (ModelState.IsValid)
+            {
+                //create record inside database
+                _db.Categories.Add(obj);
+                _db.SaveChanges(); // saves and goes to database
+                return RedirectToAction("Index");
+            }
+            return View(obj);
+
         }
 
 
