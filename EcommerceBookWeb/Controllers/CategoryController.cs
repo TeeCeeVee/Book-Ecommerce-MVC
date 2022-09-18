@@ -34,6 +34,11 @@ namespace EcommerceBookWeb.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create(Category obj)
         {
+            //custom validation
+            if (obj.Name == obj.DisplayOrder.ToString())
+            {
+                ModelState.AddModelError("CustomError", "The display order cannot match the Name.");
+            }
             //create validation
             if (ModelState.IsValid)
             {
